@@ -1,8 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+import { retrieveLaunchParams } from "@telegram-apps/sdk";
 
 function App() {
+  setTimeout(() => {
+    console.log(retrieveLaunchParams);
+  }, 1000);
+  console.log(retrieveLaunchParams);
   return (
     <div className="App">
       <header className="App-header">
